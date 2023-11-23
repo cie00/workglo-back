@@ -15,9 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="css/owl.carousel.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -48,16 +46,18 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                  <form class="navbar-form navbar-left">
+                  <!-- <form class="navbar-form navbar-left">
                     <div class="form-group">
                       <input type="text" class="form-control search_box" placeholder="Search">
                     </div>
-                  </form>
+                  </form> -->
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Workglo Acedemy</a></li>
-                    <li><a class="login_btn" href="#">Login</a></li>
+                    <li style="margin-right: 10px;"><a href="#" class="active">Home</a></li>
+                    <li style="margin-right: 10px;"><a href="#">About Us</a></li>
+                    <li style="margin-right: 10px;"><a href="#">What We Do</a></li>
+                    <li style="margin-right: 10px;"><a href="#">Work With Us</a></li>
+                    <li style="margin-right: 40px;"><a href="#">Workglo Academy</a></li>
+                    <li style="margin-right: 10px;"><a class="login_btn" href="#">Login</a></li>
                     <li><a class="register_btn" href="#">Register</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -80,10 +80,18 @@
         <div class="item active">
           <div class="sli_text">
             <h1>Arise and Shine!</h1>
-            <p>The world has come together here to help you succeed, What do you want to do?</p>
+            <p>The world has come together here to help you succeed, What
+              do you want to do?</p>
+            <div class="input-group" style="width: 500px; margin: 20px 0px;">
+              <input type="text" class="form-control home-input-text pl-4 py-2 rounded-start-5 rounded-end-0"
+                placeholder="Search Freelancer" aria-describedby="button-addon2">
+              <button class="search-button" type="button" id="button-addon2">
+                <img src="icons/search.svg" alt="" />
+              </button>
+            </div>
             <a class="green_btn" href="#">Get Started!</a>
           </div>
-          <img class="slider_img img-responsive" src="images/slider_img1.jpg" alt="" />
+          <img class="slider_img img-responsive" style="width: 100%;" src="images/slider_img1.jpg" alt="" />
         </div>
       </div>
 
@@ -187,7 +195,7 @@
             <li><a href="#"><img src="images/fc7.png" alt="" class="img-responsive" /> <span>Account
                   Consultants</span></a></li>
           </ul>
-          <a class="grn_bor_btn" href="#">See All Categories</a>
+          <a class="grn_bor_btn" href="#" style="margin-top: 40px;">See All Categories</a>
         </div>
 
         <div class="clearfix"></div>
@@ -240,9 +248,10 @@
               <thead class="thead-default">
                 <tr>
                   <th>Category</th>
-                  <th>Project Details</th>
+                  <th>Job Title</th>
+                  <th>Job Type</th>
+                  <th>Payment Type</th>
                   <th>Posted on</th>
-                  <th>Ending Time</th>
                   <th>Bidding Time Left</th>
                   <th>Budget</th>
                   <th>Bid</th>
@@ -250,68 +259,75 @@
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row">Web Design</td>
+                  <td scope="row">Web design</td>
                   <td>
-                    <h4>Restaurant and Food Delivery Comparison Site needs a fun design!</h4>
-                    <p>Yumnu is a site that lets people compare restaurants and food delivery options in their area See
-                      rough mockup for a ...</p>
+                    <h4>Educational website design in Figma</h4>
                   </td>
-                  <td>28 Feb. 2017</td>
-                  <td>15 Days</td>
-                  <td>24 Hours</td>
-                  <td>$450</td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
                   <td><a class="bid_btn" href="#">Bid</a></td>
                 </tr>
                 <tr>
-                  <td scope="row">Web Development</td>
+                  <td scope="row">Web design</td>
                   <td>
-                    <h4>Wordpress theme developer</h4>
-                    <p>I approved wordpress Psd theme in themeforest.I need developer for coding. 30 psd file coding for
-                      wordpress theme</p>
+                    <h4>Educational website design in Figma</h4>
                   </td>
-                  <td>28 Feb. 2017</td>
-                  <td>18 Days</td>
-                  <td>12 Hours</td>
-                  <td>$300</td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
                   <td><a class="bid_btn" href="#">Bid</a></td>
                 </tr>
                 <tr>
-                  <td scope="row">Web Development</td>
+                  <td scope="row">Web design</td>
                   <td>
-                    <h4>Need to make a clone of woo commerce site</h4>
-                    <p>Hi, We need to clone a woocommerce site (its theme, plugins etc)... it is a very simple job so
-                      newbies are also welcome. </p>
+                    <h4>Educational website design in Figma</h4>
                   </td>
-                  <td>27 Feb. 2017</td>
-                  <td>10 Days</td>
-                  <td>5 Hours</td>
-                  <td>$600</td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
                   <td><a class="bid_btn" href="#">Bid</a></td>
                 </tr>
                 <tr>
-                  <td scope="row">Web Development</td>
+                  <td scope="row">Web design</td>
                   <td>
-                    <h4>PHP & HTML5 Expert Required!</h4>
-                    <p>Hi .. We Are looking For Cake PHP Developer Having Skills jQuery , HTML To Fix Image Setting
-                      Issue In Our Website. </p>
+                    <h4>Educational website design in Figma</h4>
                   </td>
-                  <td>28 Feb. 2017</td>
-                  <td>15 Days</td>
-                  <td>24 Hours</td>
-                  <td>$450</td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
                   <td><a class="bid_btn" href="#">Bid</a></td>
                 </tr>
                 <tr>
-                  <td scope="row">Web Design</td>
+                  <td scope="row">Web design</td>
                   <td>
-                    <h4>Restaurant and Food Delivery Comparison Site needs a fun design!</h4>
-                    <p>Yumnu is a site that lets people compare restaurants and food delivery options in their area See
-                      rough mockup for a ...</p>
+                    <h4>Educational website design in Figma</h4>
                   </td>
-                  <td>28 Feb. 2017</td>
-                  <td>15 Days</td>
-                  <td>24 Hours</td>
-                  <td>$450</td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
+                  <td><a class="bid_btn" href="#">Bid</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">Web design</td>
+                  <td>
+                    <h4>Educational website design in Figma</h4>
+                  </td>
+                  <td>Full-time</td>
+                  <td>Monthly</td>
+                  <td>28 Jan. 2023</td>
+                  <td>2 days</td>
+                  <td>$200-400</td>
                   <td><a class="bid_btn" href="#">Bid</a></td>
                 </tr>
               </tbody>
@@ -326,6 +342,59 @@
     </div>
   </section>
 
+  <section id="blogs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title_sec">
+            <h1>Discover More</h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-4">
+          <div class="story_box" style="position: relative;">
+            <div
+              style="position: absolute; padding: 10px; background-color: #00b488; color: #FFF; left: 10px; top: 10px;">
+              Enterprise Suite
+            </div>
+            <div class="blog_img"><img src="images/blog1.jpg" alt="" /></div>
+            <div class="blog_title"><a href="#">Here's How to Find Good Copanies On Workglo</a></div>
+            <p class="blog_desc">Lorem ipsum dolor sit consectetur. Sit est quis sed in. Lorem ipsum dolor sit
+              consectetur. Sit est quis se</p>
+            <a class="blue_link" style="font-weight: bold;" href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="story_box" style="position: relative;">
+            <div
+              style="position: absolute; padding: 10px; background-color: #00b488; color: #FFF; left: 10px; top: 10px;">
+              Clients And Employers
+            </div>
+            <div class="blog_img"><img src="images/blog2.jpg" alt="" /></div>
+            <div class="blog_title"><a href="#">Here’s how to find independent professionals on workglo</a></div>
+            <p class="blog_desc">Lorem ipsum dolor sit consectetur. Sit est quis sed in. Lorem ipsum dolor sit
+              consectetur. Sit est quis se</p>
+            <a class="blue_link" style="font-weight: bold;" href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="story_box" style="position: relative;">
+            <div
+              style="position: absolute; padding: 10px; background-color: #00b488; color: #FFF; left: 10px; top: 10px;">
+              Talents and service providers
+            </div>
+            <div class="blog_img"><img src="images/blog3.jpg" alt="" /></div>
+            <div class="blog_title"><a href="#">Here’s how to find great job opportunities on Workglo</a></div>
+            <p class="blog_desc">Lorem ipsum dolor sit consectetur. Sit est quis sed in. Lorem ipsum dolor sit
+              consectetur. Sit est quis se</p>
+            <a class="blue_link" style="font-weight: bold;" href="#">Learn More</a>
+          </div>
+        </div>
+        <!-- <div class="clearfix"><a class="grn_bor_btn" href="#">Read All</a></div> -->
+      </div>
+    </div>
+  </section>
+
   <section id="gigs">
     <div class="container">
       <div class="row">
@@ -336,59 +405,75 @@
         </div>
         <div class="clearfix"></div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg1.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg1.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg2.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg2.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg3.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg3.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg4.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg4.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg5.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg5.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg6.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg6.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg7.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg7.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <div class="gig_box">
-            <img class="img-responsive" src="images/fg8.jpg" alt="" />
+          <div class="gig_box" style="border-radius: 2px; padding-top: 1px;">
+            <img class="img-responsive" src="images/fg8.jpg" alt=""
+              style="width: 97%; margin: auto; margin-top: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
             <a class="gig_title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at $10</span></div>
+            <div class="start_frm"><a href="#"><i class="fa fa-heart"></i></a> <span>Starting at <span
+                  style="font-weight: bold;">$10</span></span></div>
           </div>
         </div>
         <div class="clearfix"><a class="grn_bor_btn" href="#">View All</a></div>
@@ -396,37 +481,6 @@
     </div>
   </section>
 
-  <section id="blogs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title_sec">
-            <h1>Featured From Our Blog</h1>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="story_box">
-            <div class="blog_img"><img src="images/blog1.jpg" alt="" /></div>
-            <div class="blog_title"><a href="#">Showcasing Quality: Here's What You've #MadeOnWorkglo</a></div>
-            <p class="blog_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.</p>
-            <a class="blue_link" href="#">Read full story</a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="story_box">
-            <div class="blog_img"><img src="images/blog2.jpg" alt="" /></div>
-            <div class="blog_title"><a href="#">Showcasing Quality: Here's What You've #MadeOnWorkglo</a></div>
-            <p class="blog_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.</p>
-            <a class="blue_link" href="#">Read full story</a>
-          </div>
-        </div>
-        <div class="clearfix"><a class="grn_bor_btn" href="#">Read All</a></div>
-      </div>
-    </div>
-  </section>
   <section id="partners">
     <div class="container">
       <div class="row">
@@ -455,14 +509,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="about_footer">
+          <div style="text-align: left;" class="about_footer">
             <figure><img src="images/logo.png" alt=""></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est dui, ultricies vel orci eget, tristique
-              tincidunt odio. Nulla eu dui ac arcu eleifend malesuada luctus in nisi.</p>
-            <span>Phone: +234 (0) 7083282802</span><span>Email: support@workglo.com</span>
+            <p style="margin-left: 0px;">Lorem ipsum dolor sit amet consectetur. Non egestas metus in adipiscingbh
+              tortor sem velit. Felis ut elit idm. Magna magna rhoncus at arcu conimen interdum. Tellus id ut
+              pellentesque vestibulum amet vel integer leo. Est libero nam lorem arcu </p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-2 col-sm-6 col-xs-6">
           <div class="pad-left-50">
             <h4>Company</h4>
             <ul class="links">
@@ -481,10 +535,9 @@
             <li><a href="#">How it Works</a></li>
             <li><a href="#">Support</a></li>
             <li><a href="#">Trust & Safety</a></li>
-            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-2 col-sm-6 col-xs-6">
           <h4>Resources</h4>
           <ul class="links">
             <li><a href="#">Directory</a></li>
@@ -494,10 +547,17 @@
             <li><a href="#">Stories</a></li>
           </ul>
         </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+          <h4>Contact</h4>
+          <ul class="links">
+            <li><a href="#">Phone 08038487273</a></li>
+            <li><a href="#">Email: support@workglo.com</a></li>
+          </ul>
+        </div>
 
       </div>
       <div class="copy">
-        <p>Copyright © 2016-17 Workglo. All Rights Reserved </p>
+        <p>Copyright 2023 <span style="color: #00b488">Workglo.</span> All Rights Reserved </p>
         <div class="links"><a href="#">Terms</a> | <a href="#">Privacy</a></div>
       </div>
     </div>
