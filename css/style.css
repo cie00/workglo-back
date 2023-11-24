@@ -73,3 +73,8 @@ button.bg-bluish:hover {
 .text-greenish {
     color: #00B489;
 } */
+
+.sli_text .input-group {
+    width: 450px;
+    margin: 20px 0px;
+}
