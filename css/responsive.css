@@ -314,6 +314,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .home-input-text {
+        padding: 5px !important;
+    }
+
     .sli_text h1 {
         margin-top: 5px;
     }
